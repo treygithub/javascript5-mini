@@ -75,10 +75,10 @@ var customers = [
 // first without using lodash's map (with property argument) method, then with it.
 
 //CODE HERE
-let customerEmail=[]
-for(let prop in customers){
-  customerEmail.push(customers[email])
-}
+// let customerEmail=[]
+// for(let prop in customers){
+//   customerEmail.push(customers[email])
+// }
 
 const customerEmail = _.map(customers, 'email');
 
@@ -112,6 +112,7 @@ var friendsOfBetty = [
   "Nancy"
 ];
 
+var lefteye = _.union(friendsOfBetty,friendsOfJim)
 
 
 // Jim and Betty are having a party, but they only want to invite mutual friends.
@@ -159,4 +160,4 @@ var purchases = [
 
 // First, group the purchases by company without lodash
 // then do it again using _.groupBy()
-const grouped = _.groupBy(user,'name')
+const grouped = _.groupBy(company,'name')
