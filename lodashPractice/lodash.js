@@ -80,7 +80,7 @@ for(let prop in customers){
   customerEmail.push(customers[email])
 }
 
-const customerEmail = _.map(customer, 'email');
+const customerEmail = _.map(customers, 'email');
 
 
 var inviteList1 = ["Ed", "Fanny", "Mildred", "Alice", "James"];
@@ -112,9 +112,14 @@ var friendsOfBetty = [
   "Nancy"
 ];
 
+
+
 // Jim and Betty are having a party, but they only want to invite mutual friends.
 // Create an array of mutual friends. First without using lodash.
 // Then using lodash's _.intersection().
+
+const intersect = _.intersection()
+
 
 var purchases = [
   {
@@ -151,5 +156,7 @@ var purchases = [
   }
 ];
 
+
 // First, group the purchases by company without lodash
 // then do it again using _.groupBy()
+const grouped = _.groupBy(user,'name')
