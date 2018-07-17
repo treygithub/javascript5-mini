@@ -75,7 +75,12 @@ var customers = [
 // first without using lodash's map (with property argument) method, then with it.
 
 //CODE HERE
+let customerEmail=[]
+for(let prop in customers){
+  customerEmail.push(customers[email])
+}
 
+const customerEmail = _.map(customer, 'email');
 
 
 var inviteList1 = ["Ed", "Fanny", "Mildred", "Alice", "James"];

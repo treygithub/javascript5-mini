@@ -11,9 +11,14 @@ class App extends Component {
     }
   }
   render() {
-
-    const favFoods = this.state.favoriteFoods.map( item, i => {
-        return <FoodItem foodItem={item}/>
+   let { favoriteFoods } = this.state
+    const favFoods = favoriteFoods.map( (item, i) => {
+        return 
+        <FoodItem 
+        key={i}
+        foodItem={item}
+        
+        />
     })
 
     return (
